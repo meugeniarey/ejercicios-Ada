@@ -2,7 +2,7 @@ package ejercicios;
 
 import java.util.Scanner;
 
-public class EjercicioAhorcadoProfe {
+public class EjercicioAhorcado {
 
 	private static final int MIN_PALABRA = 4;
 	private static final int MAX_PALABRA = 10;
@@ -107,8 +107,8 @@ public class EjercicioAhorcadoProfe {
 		// minimo 4 letras
 		// maximo 10 letras
 		while (palabra.length() < MIN_PALABRA || palabra.length() > MAX_PALABRA) {
-			System.out.println("La palabra tiene que tener como mÌnimo " + MIN_PALABRA);
-			System.out.println("La palabra tiene que tener como m·ximo " + MAX_PALABRA);
+			System.out.println("La palabra tiene que tener como m√≠nimo " + MIN_PALABRA);
+			System.out.println("La palabra tiene que tener como m√°ximo " + MAX_PALABRA);
 			System.out.println();
 			System.out.println("Ingrese palabra secreta");
 			palabra = sc.next();
