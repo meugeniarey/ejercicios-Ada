@@ -2,7 +2,7 @@ package ejercicios;
 
 import java.util.Scanner;
 
-public class EjercicioMenuxelProfe {
+public class EjercicioMenu {
 	private static final int MAX_OPCION = 3;
 	private static final int DIAS = 5;
 
