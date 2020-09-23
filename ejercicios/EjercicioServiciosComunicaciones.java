@@ -3,11 +3,11 @@ package ejercicios;
 import java.util.Scanner;
 
 public class EjercicioServiciosComunicacionesMariu {
-	// Una empresa de comunicaciones ofrece servicio de telefonía, banda ancha y tv
+	// Una empresa de comunicaciones ofrece servicio de telefonÃ­a, banda ancha y tv
 	// digital. Cada uno de los servicios tiene un precio diferente.
-	// Se desea contar cuántos clientes optan por cada servicio para luego conocer
-	// la facturación de cada uno de los servicios. Se deben ingresar los
-	// clientes por número (cliente = 0 para finalizar)
+	// Se desea contar cuÃ¡ntos clientes optan por cada servicio para luego conocer
+	// la facturaciÃ³n de cada uno de los servicios. Se deben ingresar los
+	// clientes por nÃºmero (cliente = 0 para finalizar)
 
 	private static final int CANT_SERVICIOS = 3;
 
@@ -33,20 +33,20 @@ public class EjercicioServiciosComunicacionesMariu {
 			precioXServicio[i] = sc.nextFloat();
 			System.out.println("El precio del servicio " + (i + 1) + " es " + precioXServicio[i]);
 		}
-		System.out.println("Ingrese número de cliente (0 = terminar)");
+		System.out.println("Ingrese nÃºmero de cliente (0 = terminar)");
 		numeroCliente = sc.nextInt();
 
 		while (numeroCliente != 0) {
-			System.out.println("Ingrese número de servicio (1= telefonía, 2= banda ancha, 3= TV digital)");
+			System.out.println("Ingrese nÃºmero de servicio (1= telefonÃ­a, 2= banda ancha, 3= TV digital)");
 			numeroServicio = sc.nextInt();
 
 			if (numeroServicio < 0 || numeroServicio > CANT_SERVICIOS) {
 				System.out
-						.println("Servicio inexistente. Vuelva a ingresar el número se servicio (valores del 1 al 3)");
+						.println("Servicio inexistente. Vuelva a ingresar el nÃºmero se servicio (valores del 1 al 3)");
 			} else {
 				clientesXServicio[numeroServicio - 1] = clientesXServicio[numeroServicio - 1] + 1;
 			}
-			System.out.println("Ingrese número de cliente (0 = terminar)");
+			System.out.println("Ingrese nÃºmero de cliente (0 = terminar)");
 			numeroCliente = sc.nextInt();
 		}
 
@@ -56,7 +56,7 @@ public class EjercicioServiciosComunicacionesMariu {
 			System.out.println("Servicio " + (i + 1) + ":" + clientesXServicio[i]);
 		}
 
-		System.out.println("Facturación por servicio: ");
+		System.out.println("FacturaciÃ³n por servicio: ");
 		System.out.println("------------------------------------");
 		for (int i = 0; i < CANT_SERVICIOS; i++) {
 			facturacionXServicio[i] = clientesXServicio[i] * precioXServicio[i];
