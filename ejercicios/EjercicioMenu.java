@@ -6,7 +6,7 @@ public class EjercicioMenuxelProfe {
 	private static final int MAX_OPCION = 3;
 	private static final int DIAS = 5;
 
-	private static float[] recaudacion = new float[DIAS]; // es un atributo
+	private static float[] recaudacion = new float[DIAS]; 
 	private static String[] nombreDia = new String[DIAS];
 
 	public static void main(String[] args) {
@@ -60,7 +60,7 @@ public class EjercicioMenuxelProfe {
 		float nuevaRecaudacion = sc.nextFloat();
 
 		recaudacion[dia] = nuevaRecaudacion;
-		System.out.println("Recaudación modificada!");
+		System.out.println("RecaudaciÃ³n modificada!");
 		System.out.println();
 	}
 
