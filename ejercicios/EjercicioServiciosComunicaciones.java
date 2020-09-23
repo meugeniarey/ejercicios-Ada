@@ -2,7 +2,7 @@ package ejercicios;
 
 import java.util.Scanner;
 
-public class EjercicioServiciosComunicacionesMariu {
+public class EjercicioServiciosComunicaciones {
 	// Una empresa de comunicaciones ofrece servicio de telefonía, banda ancha y tv
 	// digital. Cada uno de los servicios tiene un precio diferente.
 	// Se desea contar cuántos clientes optan por cada servicio para luego conocer
